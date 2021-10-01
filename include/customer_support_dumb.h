@@ -2,8 +2,8 @@
 // Created by bender on 29/09/2021.
 //
 
-#ifndef ARJAN_STRATEGY__CUSTOMER_SUPPORT_H_
-#define ARJAN_STRATEGY__CUSTOMER_SUPPORT_H_
+#ifndef ARJAN_STRATEGY__CUSTOMER_SUPPORT_DUMB_H_
+#define ARJAN_STRATEGY__CUSTOMER_SUPPORT_DUMB_H_
 #include "support_ticket.h"
 #include <iostream>
 #include <memory>
@@ -51,4 +51,4 @@ class CustomerSupport {
   std::mt19937 g_{rd_()};
 };
 
-#endif//ARJAN_STRATEGY__CUSTOMER_SUPPORT_H_
+#endif//ARJAN_STRATEGY__CUSTOMER_SUPPORT_DUMB_H_
