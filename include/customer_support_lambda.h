@@ -5,7 +5,6 @@
 #ifndef ARJAN_STRATEGY__CUSTOMER_SUPPORT_ABSTRACT_H_
 #define ARJAN_STRATEGY__CUSTOMER_SUPPORT_ABSTRACT_H_
 #include "support_ticket.h"
-#include "ticket_ordering_strategy_functor.h"
 #include <algorithm>
 #include <iostream>
 #include <memory>
@@ -15,9 +14,9 @@
 
 using vectorSupportTicket = std::vector<SupportTicket>;
 
-class CustomerSupportAbstractFunctor {
+class CustomerSupportLambda {
  public:
-  explicit CustomerSupportAbstractFunctor(TicketOrderingStrategyFunctor& processing_strategy) : processing_strategy_{processing_strategy} {
+  explicit CustomerSupportLambda(void (*processing_strategy)(vectorSupportTicket&)) : processing_strategy_{processing_strategy} {
     tickets_ = std::vector<SupportTicket>();
   }
 
@@ -38,7 +37,7 @@ class CustomerSupportAbstractFunctor {
   }
 
  private:
-  TicketOrderingStrategyFunctor& processing_strategy_;
+  void (*processing_strategy_)(vectorSupportTicket&);
   vectorSupportTicket tickets_;
 };
 

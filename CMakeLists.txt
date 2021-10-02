@@ -24,7 +24,13 @@ target_link_libraries(strategy_inheritance customer_support_abstract)
 
 # functor approach
 add_library(ordering_strategies_functors INTERFACE include/ordering_strategies_functors.h)
-add_library(customer_support_abstract_functor INTERFACE include/customer_support_abstract_functor.h)
+add_library(customer_support_functor INTERFACE include/customer_support_functor.h)
 
-add_executable(strategy_abstract_functor src/strategy_abstract_functor.cpp)
-target_link_libraries(strategy_abstract_functor customer_support_abstract_functor)
+add_executable(strategy_functor src/strategy_functor.cpp)
+target_link_libraries(strategy_functor customer_support_functor)
+
+# lambda approach
+add_library(customer_support_lambda INTERFACE include/customer_support_lambda.h)
+
+add_executable(strategy_lambda src/strategy_lambda.cpp)
+target_link_libraries(strategy_lambda customer_support_lambda)
