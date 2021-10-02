@@ -1,5 +1,5 @@
-#include "fifo_ordering_strategy.h"
-#include "customer_support_abstract.h"
+#include "customer_support_inheritance.h"
+#include "ordering_strategies_inheritance.h"
 
 int main() {
   FIFOOrderingStrategy ordering_strategy;
