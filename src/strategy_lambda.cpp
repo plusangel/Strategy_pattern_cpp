@@ -4,8 +4,8 @@ using vectorSupportTicket = std::vector<SupportTicket>;
 
 int main() {
 
-  //  CustomerSupportLambda fifo_customer_support{[](vectorSupportTicket list) {}};
-  //  CustomerSupportLambda lifo_customer_support{[](vectorSupportTicket list) { std::reverse(list.begin(), list.end()); }};
+  //  CustomerSupportLambda fifo_customer_support{[](vectorSupportTicket &list) {}};
+  //  CustomerSupportLambda lifo_customer_support{[](vectorSupportTicket &list) { std::reverse(list.begin(), list.end()); }};
   CustomerSupportLambda random_customer_support{[](vectorSupportTicket &list) {
     std::random_device rd_;
     std::mt19937 g_{rd_()};

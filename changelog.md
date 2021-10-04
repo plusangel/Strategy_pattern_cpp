@@ -1,5 +1,8 @@
 ## changelog of my arjan_strategy
 
+### v0.0.5 04/10/2021
+Added the remaining ordering strategies in the inheritance implementation
+
 ### v0.0.4 02/10/2021
 Added the second strategy implementation based on lambdas
 

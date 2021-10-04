@@ -15,9 +15,9 @@
 
 using ptrVectorSupportTicket = std::shared_ptr<std::vector<SupportTicket>>;
 
-class CustomerSupportAbstract {
+class CustomerSupportInheritance {
  public:
-  explicit CustomerSupportAbstract(TicketOrderingStrategy& processing_strategy) : processing_strategy_{processing_strategy} {
+  explicit CustomerSupportInheritance(TicketOrderingStrategy& processing_strategy) : processing_strategy_{processing_strategy} {
     tickets_ = std::make_shared<std::vector<SupportTicket>>();
   }
 

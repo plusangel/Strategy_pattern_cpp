@@ -9,10 +9,10 @@ include_directories(
 
 # plain approach
 add_library(support_ticket INTERFACE include/support_ticket.h)
-add_library(customer_support_dumb INTERFACE include/customer_support_dumb.h)
+add_library(customer_support_plain INTERFACE include/customer_support_plain.h)
 
 add_executable(plain_approach src/plain_approach.cpp)
-target_link_libraries(plain_approach customer_support_dumb)
+target_link_libraries(plain_approach customer_support_plain)
 
 # abstract approach
 add_library(ticket_ordering_strategy INTERFACE include/ticket_ordering_strategy.h)

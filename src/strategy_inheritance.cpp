@@ -2,9 +2,9 @@
 #include "ordering_strategies_inheritance.h"
 
 int main() {
-  FIFOOrderingStrategy ordering_strategy;
+  RandomOrderingStrategy ordering_strategy;
 
-  CustomerSupportAbstract my_customer_support{ordering_strategy};
+  CustomerSupportInheritance my_customer_support{ordering_strategy};
 
   my_customer_support.CreateTickets("John Smith", "My computer makes strange sounds!");
   my_customer_support.CreateTickets("Linus Sebastian", "I can't upload any videos, please help.");
