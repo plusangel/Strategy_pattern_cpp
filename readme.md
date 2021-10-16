@@ -8,4 +8,4 @@ In the repo you will find:
 - the strategy implementation using functors
 - the strategy implementation using lambdas
 
-More about that in the coding Adventures [blog post.](http://codingadventures.org/2021/10/06/strategy-pattern-in-c/)
+More about that in the coding Adventures [blog post](http://codingadventures.org/2021/10/06/strategy-pattern-in-c/).
